@@ -1,0 +1,168 @@
+/* google font work sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* shared styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.primary-head {
+    color: var(--dark-01, #131313);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.primary-para {
+    color: var(--dark-03, #727272);
+    font-weight: 400;
+    margin: 30px 0px;
+}
+
+.primary-btn {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #FF900E;
+    border: none;
+    padding: 20px 25px;
+}
+body{
+    background-color: #FFF;
+}
+
+/* header section */
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 240px;
+}
+
+.nav-container ul {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-container li {
+    list-style: none;
+}
+
+.nav-container li>a {
+    text-decoration: none;
+    color: var(--dark-02, #424242);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.banner-head {
+    color: var(--dark-01, #131313);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    text-align: center;
+    width: 860px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.banner-img img {
+    width: 75%;
+    border-radius: 8px;
+    padding-bottom: 45px;
+}
+
+.banner-img {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* main part */
+/* quick section */
+.quick-container {
+    display: flex;
+    margin-top: 85px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.quick-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.quick-head {
+    font-size: 2.8rem;
+}
+
+.quick-list {
+    color: var(--dark-03, #727272);
+    font-weight: 500;
+}
+
+.of-our {
+    color: var(--dark-01, #131313);
+    font-weight: 700;
+}
+
+.feat {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
+
+/* media query for small devices*/
+
+@media screen and (max-width:576px) {
+    .nav-container,
+    .quick-container
+     {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-container ul {
+        margin-top: 20px;
+    }
+
+    .banner-description {
+        width: 100%;
+    }
+    .quick-images{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* media query for medium devices */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .nav-container{
+        padding: 20px;
+    }
+    .banner-description {
+        width: 90%;
+    }
+    .quick-container
+    {
+       flex-direction: column;
+       padding: 20px;
+   }
+}
+
